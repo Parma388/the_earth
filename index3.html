@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Earth Guardians</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e0f2f7; 
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%282002%29.png/1920px-The_Blue_Marble_%282002%29.png'); /* High-res Earth image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            min-height: 150vh; 
+        }
+
+        
+        header {
+            background: rgba(0, 51, 102, 0.85); 
+            color: #fff;
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 5px solid #4CAF50; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+    
+        .container {
+            
+            width: 85%;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px 40px;
+            background-color: rgba(255, 255, 255, 0.92); /* Slightly opaque white for readability */
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+
+            gap: 40px;
+        }
+
+        /* Section Styling */
+        .contact-section {
+            flex: 1; /* Allows sections to grow and shrink */
+            min-width: 300px; /* Minimum width before wrapping */
+        }
+
+        .contact-section h2 {
+            color: #004d99; /* Darker blue */
+            border-bottom: 3px solid #7cb342; /* Lighter green */
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        /* Contact Form Styles */
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 20px); /* Adjust for padding */
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+        }
+
+        .contact-form textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50; /* Green button */
+            color: white;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #444;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #004d99; 
+        }
+
+        
+        .social-links {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            
+            font-size: 2.5em;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .social-links a:hover {
+            color: #4CAF50; 
+            transform: scale(1.1);
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background:   rgba(17,156,95,0.853); 
+            color: #fff;
+            margin-top: 30px; 
+            border-top: 5px solid #4CAF50; 
+            font-size: 0.9em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 85%;
+                padding: 20px;
+                flex-direction: column; 
+                gap: 30px;
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
+            .contact-section h2 {
+                font-size: 1.5em;
+            }
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                
+            }
+            .social-links a {
+                font-size: 2em;
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            .contact-section h2 {
+                font-size: 1.3em;
+            }
+            .contact-form button {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+         
+        
+.site-header{
+    background-color: rgba(17, 156, 95, 0.853);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem ;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-menu1 ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-menu1 a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-menu1 a:hover{
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+     <header class="site-header">
+        <div class="logo">The Earth</div>
+        <div class="nav-menu1">
+            <ul>
+                <li><a href="hackathon/index5.html">Home</a></li>
+                <li><a href="index2.html">About Us</a></li>
+                <li><a href="index4.html">Services</a></li>
+                <li><a href="index3.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <header>
+        <h1>Connect with Earth Guardians</h1>
+    </header>
+
+    <div class="container">
+        <section class="contact-section contact-form">
+            <h2>Send Us a Message</h2>
+            <p>Have a question, suggestion, or just want to say hello? Use the form below to get in touch with the Earth Guardians team. We're here to listen and respond to your inquiries about our planet.</p>
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Briefly describe your inquiry">
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    
+        
+
+    
+</body>
+</html>
